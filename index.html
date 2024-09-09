@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kalkulator Luas</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h2>Welcome TO KATIK</h2>
+      <p>Kalkulator Hitung Luas Ukuran/Bentuk</p>
+    </header>
+
+    <main class="container">
+      <section class="selection-content">
+        <button class="selection-btn" type="button">SEGITIGA</button>
+        <button class="selection-btn0" type="button">JAJAR GENJANG</button>
+      </section>
+
+      <section class="main-content">
+        <aside>
+          <header>
+            <h1>Luas Segitiga</h1>
+          </header>
+          <img
+            class="luas-segitiga-img"
+            src="https://bukusekolah.id/wp-content/uploads/2023/10/Rumus-Keliling-Segitiga.jpg"
+            alt="Gambar Luas Segitiga"
+          />
+          <p>RUMUS Luas SEGITIGA: 1/2 x Alas x Tinggi</p>
+
+          <hr />
+
+          <form id="segitigaForm">
+            <div class="form-group">
+              <label for="alasSegitiga">Panjang Alas (cm)</label>
+              <input type="number" id="alasSegitiga" required />
+            </div>
+            <div class="form-group">
+              <label for="tinggiSegitiga">Tinggi (cm)</label>
+              <input type="number" id="tinggiSegitiga" required />
+            </div>
+
+            <p id="hasilLuasSegitiga">Hasil:</p>
+
+            <button type="button" onclick="hitungLuasSegitiga()">HITUNG</button>
+          </form>
+        </aside>
+
+        <aside>
+          <header>
+            <h1>Luas Jajar Genjang</h1>
+          </header>
+          <img
+            class="luas-segitiga-img"
+            src="https://image.popmama.com/content-images/post/20220402/l-jajargenjangjpg-1e4309e6131e2856d7f8f6b6a8a6b18f.jpg?width=600&height=auto"
+            alt="Gambar Luas Jajar Genjang"
+          />
+          <p>RUMUS Luas Jajar Genjang: Alas x Tinggi</p>
+
+          <hr />
+
+          <form id="jajarGenjangLuasForm">
+            <div class="form-group">
+              <label for="alasJajarGenjang">Panjang Alas (cm)</label>
+              <input type="number" id="alasJajarGenjang" required />
+            </div>
+            <div class="form-group">
+              <label for="tinggiJajarGenjang">Tinggi (cm)</label>
+              <input type="number" id="tinggiJajarGenjang" required />
+            </div>
+
+            <p id="hasilLuasJajarGenjang">Hasil:</p>
+
+            <button type="button" onclick="hitungLuasJajarGenjang()">
+              HITUNG
+            </button>
+          </form>
+        </aside>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
